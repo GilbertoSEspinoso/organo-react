@@ -14,7 +14,7 @@
 
 .time .colaboradores {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-top: 32px;
   flex-wrap: wrap;
 }
