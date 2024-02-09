@@ -1,9 +1,12 @@
 .colaborador {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 8px;
 }
 
 .colaborador .cabecalho {
+  flex-grow: 1;
   background-color:  #F0F0F0;
   border-radius: 10px 10px 0px 0px;
 }
@@ -15,6 +18,7 @@
 }
 
 .colaborador .rodape {
+  flex-grow: 2;
   background: #FFFFFF;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 0px 0px 10px 10px;
