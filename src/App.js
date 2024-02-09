@@ -107,6 +107,15 @@ function App() {
     console.log('Deletando Colaborador')
   }
 
+  function mudarCorDoTime(cor, nome) {
+    setTimes(times.map(time => {
+      if (time.nome === nome) {
+        time.corSecundaria = cor;
+      }
+      return time;
+    }));
+  }
+
   return (
     <div>
       <Banner />
@@ -115,6 +124,7 @@ function App() {
       <section className='times'>
         {times.map((time, indice) =>
           <Time
+            mudarCor={mudarCorDoTime}
             key={indice}
             time={time}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
