@@ -6,7 +6,7 @@ import Footer from './componentes/Footer';
 
 function App() {
 
-  const times = [
+  const [times, setTimes] = useState([
     {
       nome: 'Programação',
       corPrimaria: '#D9F7E9',
@@ -42,7 +42,7 @@ function App() {
       corPrimaria: '#FFEEDF',
       corSecundaria: '#FF8A29'
     },
-  ]
+  ])
 
   const inicial = [
     {
