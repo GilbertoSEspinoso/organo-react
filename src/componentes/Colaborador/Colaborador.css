@@ -1,6 +1,7 @@
 .colaborador {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 280px;
   margin: 8px;
 }
@@ -40,4 +41,12 @@
   line-height: 22px;
   color: #212121;
   margin: 0;
+}
+
+.deletar {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
 }
